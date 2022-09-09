@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Apps</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5054bed8cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head> 
+  <body>
+    <div class="weather-app pt-2 mt-5">
+      <div class="container">
+        <div class="row my-5">
+          <div class="search-bar">
+						<form id="search-form">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control" 
+                id="cityName"
+                placeholder="Enter City Name"
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit">
+                  Search
+                </button> 
+                <button class="btn btn-outline-secondary btn-current" type="button">
+                  Current
+                </button> 
+							</div>
+						</form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <h2 id="city">New York, USA</h2>
+          <p id="date"></p> 
+          <p>Partly Cloudy</p>
+          <i class="fa-solid fa-cloud"></i> 
+          <h3 class="temp-top">
+						<span id="temp" class="temp-main">30</span>  
+						<span class="temp-units"> 
+							<a href="#" id="celsius">°C</a>
+						</span> 
+            </h3>
+            <p>Wind: <span id="wind">7 km/h</span></p>
+            <p>Humidity: <span id="humidity">39 %</span></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row d-flex justify-content-center my-5 py-4">
+          <div class="col-lg-2 col-md-2 col-sm-2 text-center mb-3">
+            <h3 class="day">Sat</h3>
+            <i class="fa-solid fa-cloud-bolt"></i>
+            <p class="temp">20 °</p>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-2 text-center mb-3">
+            <h3 class="day">Sun</h3>
+            <i class="fa-solid fa-cloud-rain"></i>
+            <p class="temp">19 °</p>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-2 text-center mb-3">
+            <h3 class="day">Mon</h3>
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+            <p class="temp">17 °</p>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-2 text-center mb-3">
+            <h3 class="day">Tue</h3>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="temp">18 °</p>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-2 text-center mb-3">
+            <h3 class="day">Wed</h3>
+            <i class="fa-solid fa-cloud-moon-rain"></i>
+            <p class="temp">20 °</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

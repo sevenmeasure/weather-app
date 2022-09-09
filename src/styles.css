@@ -1,0 +1,57 @@
+.weather-app {
+    max-width: 850px;
+    margin: 0 auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .fa-solid {
+    font-size: 30px;
+    color: #f1d445;
+  }
+  
+  .day {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .temp {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .form-control {
+    border-radius: 50px;
+    line-height: 2;
+  }
+  
+  .input-group .btn {
+    position: relative;
+    z-index: 2;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    line-height: 2;
+    width: 120px;
+  }
+  
+  .temp-main {
+    font-size: 64px;
+  }
+  
+  .temp-units {
+    position: relative;
+    top: -28px;
+  }
+  
+  .temp-units a {
+    text-decoration: none;
+  }
+  
+  .btn-current {
+    border-bottom-left-radius: 50px !important;
+    border-top-left-radius: 50px;
+  }
+  
